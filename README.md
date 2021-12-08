@@ -77,7 +77,7 @@ XGBoost, short for eXtreme Gradient Boosting, is a popular implementation of Gra
 
 For classification problems in this case, we use booster = gbtree parameter, that is, a tree is grown one after other and attempts to reduce misclassification rate in subsequent iterations by giving the next tree a higher weight to misclassified points by the previous tree. In this case, we use binary classification error rate as the evaluation metric.
 
-Every parameter is significant to the performance of the XGBoost model. Most frequently used and tunable parameters used in this paper are explained as below\cite{xg1}:
+Every parameter is significant to the performance of the XGBoost model. Most frequently used and tunable parameters used in this paper are explained as belo:
 
 * **nrounds**: It controls the maximum number of iterations. For classification, it is similar to the number of trees to grow. Should be tuned using CV.
 * **eta**: It controls the learning rate, i.e., the rate at which our model learns patterns in data. After every round, it shrinks the feature weights to reach the best optimum. Lower eta leads to slower computation. It must be supported by increase in nrounds. Typically, it lies between 0.01 - 0.3.
