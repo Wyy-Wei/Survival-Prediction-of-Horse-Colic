@@ -108,6 +108,7 @@ The importances of the top 15 most important variables are not exactly the same 
 
 The break down plot explains how each input feature contributes to the prediction. Beginning and end of each rectangle corresponds to the prediction with and without particular feature. From the break down plot, we can see exactly how each feature has influenced the prediction. The intercept equals to 0.592, so the probability of horse survived is higher, which may due to the unbalanced data. If the horse has inflammation all over its intestinal sites, that is, the variable "lesion1" equals to 11300, then the probability of survival will decrease by 0.092. If the temperature of extremities is cool or cold, then the probability will decrease by 0.083, because cool to cold extremities indicate possible shock. Similarly, if the horse has 45 or more red cells by volume in the blood, then the probability of survival will increase by 0.055. And if the rectal temperature of the horse is higher than 38.5, the probability will increase by 0.082, because temperature may be reduced when the animal is in late shock. We can also conclude from the break down plot that the age of a horse with colic does not affect its survival rate.
 
+<img src="https://user-images.githubusercontent.com/53469433/152893365-3f845eb0-e662-4876-86c9-c79fcce404ac.jpg" width="500" />
 
 However, the total accuracy of XGBoost model is only 0.806, which may due to the lack of data and the large amount of missing data. XGBoost model does not obviously predict the horse to be alive as logistic regression does.
 
